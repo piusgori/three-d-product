@@ -1,5 +1,4 @@
 import { AccumulativeShadows, RandomizedLight } from "@react-three/drei"
-import { easing } from "maath"
 import { useRef } from "react"
 
 const Backdrop = () => {

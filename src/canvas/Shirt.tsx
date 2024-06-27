@@ -9,8 +9,8 @@ const Shirt = () => {
     const snap = useSnapshot(state);
     const { nodes, materials }: { nodes: any, materials: any } = useGLTF('/shirt_baked.glb')
 
-    const logoTexture = useTexture(snap.logoDecal);
-    const fullTexture = useTexture(snap.fullDecal);
+    const logoTexture: any = useTexture(snap.logoDecal);
+    const fullTexture: any = useTexture(snap.fullDecal);
 
     useFrame((_, delta) => {
         easing.dampC(
